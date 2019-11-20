@@ -54,7 +54,7 @@
     "http-proxy-middleware": "0.19.1",
     "imports-loader": "^0.8.0",
     "less": "^3.8.0",
-    "lodash": "4.17.11",
+    "lodash": "4.17.15",
     "log-update": "2.3.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pacote": "9.1.0",
