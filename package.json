@@ -1,0 +1,114 @@
+{
+  "_from": "@c8y/cli",
+  "_id": "@c8y/cli@1005.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-hRxolcsQ/A6mNRWm+kckHieieFFyX5lPtJCWsI5u2gB9q3AfVwuCOpTNzbSF6npAHmhrc4NnOEX66f0Av9ZiRg==",
+  "_location": "/@c8y/cli",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@c8y/cli",
+    "name": "@c8y/cli",
+    "escapedName": "@c8y%2fcli",
+    "scope": "@c8y",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/@c8y/cli/-/cli-1005.0.7.tgz",
+  "_shasum": "30797d3fa53403d0f37b9c229992a89dbcdd0943",
+  "_spec": "@c8y/cli",
+  "_where": "D:\\nif\\jmeter\\taskforce\\2019-11-12",
+  "author": {
+    "name": "Cumulocity"
+  },
+  "bin": {
+    "c8ycli": "cli.js"
+  },
+  "builders": "./dist/ng-cli/schemas/builders.json",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/core": "7.4.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/preset-env": "7.4.3",
+    "@c8y/client": "1005.0.7",
+    "JSONPath": "0.11.2",
+    "angular-gettext-tools": "2.4.1",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.5",
+    "babel-plugin-angularjs-annotate": "0.10.0",
+    "chalk": "2.4.1",
+    "commander": "2.15.1",
+    "css-loader": "2.1.1",
+    "css-vars-ponyfill": "^1.15.3",
+    "es6-promise": "4.2.5",
+    "express": "4.16.4",
+    "fast-glob": "2.2.0",
+    "fs-extra": "5.0.0",
+    "html-webpack-plugin": "3.2.0",
+    "http-proxy-middleware": "0.19.1",
+    "imports-loader": "^0.8.0",
+    "less": "^3.8.0",
+    "lodash": "4.17.11",
+    "log-update": "2.3.0",
+    "optimize-css-assets-webpack-plugin": "5.0.1",
+    "pacote": "9.1.0",
+    "pofile": "1.0.11",
+    "prompt": "1.0.0",
+    "sanitize-filename": "1.6.1",
+    "tslib": "^1.9.2",
+    "unzip-stream": "0.3.0",
+    "webpack-dev-middleware": "3.2.0",
+    "webpack-hot-middleware": "2.22.3",
+    "webpack-merge": "^4.1.4",
+    "webpack-sources": "^1.2.0",
+    "yargs": "12.0.2",
+    "zip-dir": "1.0.2"
+  },
+  "deprecated": false,
+  "description": "CLI tool for Cumulocity IoT applications",
+  "devDependencies": {
+    "@babel/cli": "7.4.3",
+    "@types/express": "^4.11.1",
+    "@types/fs-extra": "5.0.1",
+    "@types/node": "10.1.4",
+    "@types/webpack": "4.4.0",
+    "tslint": "^5.9.1",
+    "typescript": "3.1.6"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "Cumulocity",
+    "IoT",
+    "m2m",
+    "cli",
+    "tools"
+  ],
+  "license": "Apache-2.0",
+  "main": "cli.js",
+  "name": "@c8y/cli",
+  "peerDependencies": {
+    "@angular-devkit/build-angular": "~0.8.4"
+  },
+  "schematics": "./dist/ng-cli/schemas/collection.json",
+  "scripts": {
+    "build": "tsc -p . && tsc -p src/app-bootstrap && npm run copy:schemas",
+    "copy:schemas": "ncp src/ng-cli/schemas dist/ng-cli/schemas",
+    "lint": "tslint --project tsconfig.json",
+    "prepare": "npm run build",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "node __tests__/index.js",
+    "test:watch": "jest --watch",
+    "watch": "tsc -w",
+    "watch:bootstrap": "tsc -w -p src/app-bootstrap"
+  },
+  "version": "1005.0.7"
+}
