@@ -65,11 +65,25 @@ Webpack options can be defined with ```--env.<option>=<value>```. These will be 
 If you are using c8ycli behind a corporate proxy, then the proxy can be configured by setting the HTTPS_PROXY environment variable
 
 ```sh
+# shell
 export HTTPS_PROXY=http://10.0.0.1:8000
+
+# Windows cmd
+SET HTTPS_PROXY=http://10.0.0.1:8000
+
+# Windows Powershell
+$env:HTTPS_PROXY = "http://10.0.0.1:8000"
 ```
 
 Urls which should not go through the proxy can be configured by setting the NO_PROXY environment variable.
 
 ```sh
+# Using shell
 export NO_PROXY=localhost,127.0.0.1
+
+# Windows cmd
+SET NO_PROXY=localhost,127.0.0.1
+
+# Windows Powershell
+$env:NO_PROXY = "localhost,127.0.0.1"
 ```
